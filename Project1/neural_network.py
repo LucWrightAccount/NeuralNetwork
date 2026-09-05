@@ -77,6 +77,7 @@ print("\nSTEP 5: Model Compiled")
 model.fit(X, y, epochs=100, batch_size=1, verbose=1)
 
 #Make Predicions
+#The Prediction 
 test_data = np.array([[0.2, 0.4]])
 prediction = model.predict(test_data)
 predicted_label = (prediction > 0.5).astype(int)
